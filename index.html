@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+body {
+  font-family: Arial;
+  margin: 0;
+  line-height: 1.6;
+}
+
+header {
+  background: #1abc9c;
+  color: white;
+  padding: 40px 20px;
+}
+
+  header img {
+    height: 200px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1em;
+      letter-spacing: 1px;
+    }
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding:  20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap:10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  background: #16a085;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background: #16a085;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+input, select, button {
+  display: block;
+  margin: 10px 0;
+  padding: 8px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
+</style>
+
+</head>
+<body>
+    
+    <header>
+        <img src="image1.web" alt="Logo">
+        <h1>Aplikasi Simpan Pinjam</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>|
+                <li><a href="transaksi.html">Transaksi</a></li> |
+                <li><a href="profil.html">Profil</a></li> |
+                <li><a href="login.html">Login</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Selamat Datang</h2>
+        <p>Aplikasi Simpan Pinjam digunakan untuk mengelola data simpanan dan pinjaman anggota</p>
+         <ol>
+            <li>Login ke sistem</li>
+            <li>Pilih menu transaksi</li>
+            <li>Input simpanan atau pinjaman</li>
+            <li>Simpan dan lihat daftar transaksi</li>
+          </ol>
+    </main>
+
+    <script>
+    function validasi() {
+  let nama = document.getElementById("nama").value;
+  let jenis = document.getElementById("jenis").value;
+  let jumlah = document.getElementById("jumlah").value;
+
+  if (nama === "" || jenis === "" || jumlah === "") {
+    alert("Semua field wajib diisi!");
+    return false;
+  }
+
+  alert("Transaksi berhasil disimpan");
+  return true;
+}
+    </script>
+    <footer><p>&copy; 2025 Aplikasi Simpan Pinjam</style></p></footer>
+</body>
+</html>

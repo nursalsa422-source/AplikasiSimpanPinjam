@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+header {
+  background: #1abc9c;
+  color: white;
+  padding: 15px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background: #16a085;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+input, select, button {
+  display: block;
+  margin: 10px 0;
+  padding: 8px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
+</style>
+<body>
+    <header>
+        <h1>Login</h1>
+    </header>
+    <main>
+  <form>
+    <label>Username</label>
+    <input type="text">
+
+    <label>Password</label>
+    <input type="password">
+
+    <button>Login</button>
+  </form>
+</main>
+
+<footer><p>Halaman Login</p></footer>
+<footer><a href="index.html" style="color:yellow;">Kembali</a></footer>
+</body>
+</html>
